@@ -1,4 +1,5 @@
-arr = list(input("Enter the array elements: "))
+user_input = input("Enter numbers separated by spaces: ")
+arr = [float(num) for num in user_input.split()]
 
 print("Original list:", arr)
 

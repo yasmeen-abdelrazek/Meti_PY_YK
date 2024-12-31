@@ -1,6 +1,6 @@
-import random
+user_input = input("Enter numbers separated by spaces: ")
+arr = [float(num) for num in user_input.split()]
 
-arr = list(input("Enter the array elements: "))
 print("Original list:", arr)
 
 def merge_sort(arr):
