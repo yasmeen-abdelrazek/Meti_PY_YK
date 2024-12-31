@@ -5,17 +5,14 @@ class Student:
         self.grades = grades if grades is not None else []
 
     def add_grade(self, grade):
-        """Adds a grade to the student's grade list."""
         self.grades.append(grade)
 
     def calculate_average(self):
-        """Calculates the average of the student's grades."""
         if len(self.grades) == 0:
             return 0
         return sum(self.grades) / len(self.grades)
 
     def display_info(self):
-        """Displays the student's information."""
         avg_grade = self.calculate_average()
         print(f"Student Name: {self.name}")
         print(f"Age: {self.age}")
@@ -27,12 +24,10 @@ class StudentDatabase:
         self.students = []
 
     def add_student(self, name, age, grades=None):
-        """Adds a new student to the database."""
         new_student = Student(name, age, grades)
         self.students.append(new_student)
 
     def display_all_students(self):
-        """Displays information for all students in the database."""
         if not self.students:
             print("No students in the database.")
             return
