@@ -1,7 +1,6 @@
 import random
 
-arr = [random.randint(1, 50) for _ in range(10)] 
-
+arr = list(input("Enter the array elements: "))
 print("Original list:", arr)
 
 n = len(arr)
